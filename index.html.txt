@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jyotish Anushthan Karmakand Kendra | Ujjain</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#fff3dc;color:#333;}
+header{background:#7b1e1e;color:#fff;padding:20px;text-align:center;}
+nav{background:#d4a017;padding:10px;text-align:center;}
+nav a{margin:10px;color:#000;font-weight:bold;text-decoration:none;}
+section{padding:25px;}
+h2{color:#7b1e1e;}
+.card{background:#fff;padding:15px;margin:10px 0;border-radius:10px;}
+.btn{display:inline-block;background:#7b1e1e;color:#fff;padding:10px 15px;border-radius:6px;text-decoration:none;margin:5px;}
+.lang{position:fixed;top:10px;right:10px;}
+footer{background:#7b1e1e;color:#fff;text-align:center;padding:15px;}
+iframe{border:none;border-radius:10px;}
+</style>
+
+<script>
+function hindi(){document.getElementById("hi").style.display="block";document.getElementById("en").style.display="none";}
+function english(){document.getElementById("hi").style.display="none";document.getElementById("en").style.display="block";}
+</script>
+
+</head>
+<body>
+
+<div class="lang">
+<button onclick="hindi()">हिंदी</button>
+<button onclick="english()">English</button>
+</div>
+
+<header>
+<h1>🕉️ Jyotish Anushthan Karmakand Kendra</h1>
+<p>Ujjain – City of Lord Mahakal</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#kundli">Kundli</a>
+<a href="#panchang">Panchang</a>
+<a href="#contact">Booking</a>
+</nav>
+
+<section id="home">
+<div id="hi">
+<h2>🔱 स्वागत है</h2>
+<p>हमारे केंद्र में सभी प्रकार के <b>ज्योतिष परामर्श, पूजा-पाठ, अनुष्ठान और कर्मकांड</b> वैदिक विधि से किए जाते हैं।</p>
+</div>
+<div id="en" style="display:none">
+<h2>🔱 Welcome</h2>
+<p>We provide authentic <b>Vedic astrology, puja, anushthan, and karmakand services</b> in Ujjain.</p>
+</div>
+</section>
+
+<section id="services">
+<h2>🪔 Services / सेवाएँ</h2>
+<div class="card">🔮 Kundli Analysis / कुंडली परामर्श</div>
+<div class="card">💍 Marriage Matching & Dosha Nivaran / विवाह मिलान & दोष निवारण</div>
+<div class="card">🔥 Mahamrityunjaya Jaap & Anushthan / महामृत्युंजय जाप एवं अनुष्ठान</div>
+<div class="card">🪐 Kaal Sarp, Pitra, Mangal Dosh Shanti / कालसर्प, पितृ, मांगलिक दोष शांति</div>
+<div class="card">📿 Griha Pravesh, Mundan, Shraddh / गृह प्रवेश, मुंडन, श्राद्ध</div>
+</section>
+
+<section id="kundli">
+<h2>🔮 Online Kundli / ऑनलाइन कुंडली</h2>
+<p>नीचे विवरण भरकर अपनी जन्म कुंडली प्राप्त करें / Fill your details to get Kundli</p>
+<iframe src="https://www.astrosage.com/freechart/iframe.asp" width="100%" height="700"></iframe>
+</section>
+
+<section id="panchang">
+<h2>📅 Panchang / पंचांग</h2>
+<iframe src="https://www.astrosage.com/panchang/iframe.asp" width="100%" height="500"></iframe>
+</section>
+
+<section id="contact">
+<h2>📞 Online Booking / संपर्क</h2>
+<p>📍 Ujjain, Madhya Pradesh<br>📱 Phone / WhatsApp: 9XXXXXXXXX</p>
+<a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20I%20want%20Jyotish%20Consultation">WhatsApp Booking</a>
+<a class="btn" href="upi://pay?pa=yourupi@upi&pn=JyotishKendra">Pay Online (UPI)</a>
+</section>
+
+<footer>
+<p>© 2025 Jyotish Anushthan Karmakand Kendra, Ujjain</p>
+</footer>
+
+</body>
+</html>
