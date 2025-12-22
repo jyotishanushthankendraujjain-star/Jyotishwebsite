@@ -2,81 +2,86 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
+<title>Ujjain Wale Panditji | Mahakal Jyotish Karmakand</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ujjain Wale Panditji | Jyotish Karmakand Anushthan</title>
-
-<meta name="description" content="Ujjain Wale Panditji – Pandit Abhishek Sharma (Upadhyay), Mahakal, Kaal Bhairav, Pitra Moksh, Jyotish, Anushthan, Ujjain Darshan">
-<meta name="keywords" content="Ujjain Pandit, Mahakal Pooja, Kaal Bhairav Pooja, Pitra Moksh, Jyotish Ujjain">
-<meta name="author" content="Pandit Abhishek Sharma">
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Arial;background:#f5f1ec}
-h1,h2,h3{color:#5a2a0c}
-p,li{line-height:1.6}
+:root{
+ --bg:#0b0b0b;--gold:#ffcc66;--saffron:#ff9933;
+}
+body{margin:0;font-family:'Noto Serif Devanagari',serif;background:var(--bg);color:#f5e6c8}
+h1,h2,h3{font-family:'Yatra One',cursive;color:var(--gold)}
+section{padding:40px 20px;border-bottom:1px solid #333}
+a{color:var(--gold);text-decoration:none}
+ul{line-height:1.8}
 
-/* SIDEBAR */
 .sidebar{
-position:fixed;left:0;top:0;width:240px;height:100%;
-background:#2b1407;overflow:auto
+ position:fixed;top:0;left:0;width:230px;height:100%;
+ background:#111;padding:20px;overflow:auto
 }
-.sidebar a{
-display:block;padding:12px;color:#fff;text-decoration:none;
-border-bottom:1px solid #402312
-}
-.sidebar a:hover{background:#4b2a14}
+.sidebar a{display:block;padding:8px 0}
 
-/* HEADER */
-header{
-margin-left:240px;background:#3b1f0b;color:#fff;
-text-align:center;padding:20px;position:relative
+.main{margin-left:250px}
+
+.hero{
+ background:url('images/mahakal.jpg') center/cover no-repeat;
+ text-align:center;padding:120px 20px
 }
-header img{height:90px}
-.lang-btn{
-position:absolute;top:15px;right:15px;
-padding:6px 12px;cursor:pointer
+.hero h1{font-size:38px}
+.mantra{animation:fade 3s infinite alternate}
+
+@keyframes fade{
+ from{opacity:.4}to{opacity:1}
 }
 
-/* MAIN */
-.main{margin-left:240px;padding:20px}
-section{
-background:#fff;margin-bottom:25px;
-padding:20px;border-radius:10px
+.card{
+ background:#161616;border-radius:12px;
+ padding:20px;margin:15px 0
 }
 
-/* ACCORDION */
-.accordion button{
-width:100%;padding:12px;margin-top:8px;
-border:none;background:#efe5da;
-text-align:left;font-size:16px;cursor:pointer
-}
-.accordion div{
-display:none;padding:12px;border:1px solid #ddd
-}
-.accordion div.open{display:block}
-
-/* FORM */
-input,select,textarea,button{
-width:100%;padding:8px;margin-top:5px
-}
-button{background:#5a2a0c;color:#fff;border:none;cursor:pointer}
-
-/* WHATSAPP */
 .whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25d366;color:#fff;
-padding:14px;border-radius:50%;
-font-size:24px;text-decoration:none
+ position:fixed;bottom:20px;right:20px;
+ background:#25D366;color:#fff;
+ padding:14px 18px;border-radius:50px;
+ font-weight:bold;z-index:999
 }
 
-img{max-width:100%;border-radius:10px;margin-top:10px}
+.toggle{
+ position:fixed;top:20px;right:20px;
+ background:#222;padding:6px;border-radius:8px
+}
+
+.shop-grid{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+ gap:20px
+}
+.shop-item{
+ background:#1c1c1c;padding:15px;border-radius:10px;text-align:center
+}
+.shop-item img{width:100%;border-radius:8px}
+
+@media(max-width:768px){
+ .sidebar{position:relative;width:100%;height:auto}
+ .main{margin-left:0}
+}
 </style>
 </head>
 
 <body>
 
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">WhatsApp</a>
+
+<!-- LANGUAGE TOGGLE (UI READY) -->
+<div class="toggle">
+ EN | हिन्दी
+</div>
+
 <!-- SIDEBAR -->
 <div class="sidebar">
+<h3>🕉️ Menu</h3>
 <a href="#home">Home</a>
 <a href="#services">Services</a>
 <a href="#rashifal">Rashifal</a>
@@ -86,265 +91,141 @@ img{max-width:100%;border-radius:10px;margin-top:10px}
 <a href="#ujjain">Ujjain Darshan</a>
 <a href="#aarti">Aarti & Mantra</a>
 <a href="#reports">Reports</a>
-<a href="#booking">Booking</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 <a href="#terms">Terms</a>
-<a href="#legal">Legality</a>
 </div>
-
-<!-- HEADER -->
-<header id="home">
-<img src="images/panditji/logo.png" alt="Ujjain Wale Panditji">
-
-<h1 data-hi="उज्जैन वाले पंडितजी" data-en="Ujjain Wale Panditji">
-उज्जैन वाले पंडितजी
-</h1>
-
-<p data-hi="ज्योतिष कर्मकांड अनुष्ठान केंद्र, उज्जैन"
-data-en="Jyotish Karmakand Anushthan Kendra, Ujjain">
-ज्योतिष कर्मकांड अनुष्ठान केंद्र, उज्जैन
-</p>
-
-<p>Pandit Abhishek Sharma (Upadhyay)</p>
-
-<button class="lang-btn" onclick="toggleLang()">EN / हिंदी</button>
-</header>
 
 <div class="main">
 
+<!-- HOME -->
+<section id="home" class="hero">
+<h1>Ujjain Wale Panditji</h1>
+<h3>Jyotish Karmakand Anushthan Kendra, Ujjain</h3>
+<p>Pandit Abhishek Sharma (Upadhyay)</p>
+<h2 class="mantra">ॐ नमः शिवाय</h2>
+<a href="https://wa.me/91XXXXXXXXXX">📞 Book on WhatsApp</a>
+</section>
+
 <!-- SERVICES -->
 <section id="services">
-<h2>Services – Pooja | Anushthan | Karmakand</h2>
+<h2>🔱 Services</h2>
 
-<div class="accordion">
-
-<button>ग्रह दोष निवारण पूजा</button>
-<div>
+<div class="card">
+<h3>ग्रह दोष निवारण</h3>
 <ul>
-<li>नवग्रह शांति</li>
-<li>कालसर्प दोष</li>
+<li>नवग्रह शांति पूजा</li>
+<li>कालसर्प दोष निवारण</li>
 <li>मंगल दोष</li>
+<li>शनि साढ़ेसाती / ढैय्या</li>
 <li>राहु-केतु दोष</li>
-<li>शनि साढ़ेसाती</li>
 <li>पितृ दोष</li>
 </ul>
+<a href="https://wa.me/91XXXXXXXXXX">WhatsApp</a>
 </div>
 
-<button>काल भैरव पूजा (उज्जैन)</button>
-<div>
+<div class="card">
+<h3>महाकाल विशेष पूजा (उज्जैन)</h3>
+<ul>
+<li>महाकाल रुद्राभिषेक</li>
+<li>महामृत्युंजय जप</li>
+<li>शिव पार्थिव पूजन</li>
+<li>भस्म आरती</li>
+</ul>
+<a href="https://wa.me/91XXXXXXXXXX">WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>काल भैरव पूजा</h3>
 <ul>
 <li>ऋण मुक्ति</li>
-<li>भय व शत्रु बाधा नाश</li>
-<li>कोर्ट केस शांति</li>
-<li>तंत्र बाधा निवारण</li>
+<li>शत्रु निवारण</li>
+<li>भय बाधा शांति</li>
 </ul>
+<a href="https://wa.me/91XXXXXXXXXX">WhatsApp</a>
 </div>
 
-<button>पितृ मोक्ष अनुष्ठान</button>
-<div>
+<div class="card">
+<h3>माँ बगलामुखी पूजा</h3>
 <ul>
-<li>पिंडदान</li>
-<li>तर्पण</li>
-<li>नारायण बलि</li>
-<li>त्रिपिंडी श्राद्ध</li>
+<li>मूल मंत्र जप</li>
+<li>विशेष पूजा</li>
+<li>हवन</li>
+<li>यंत्र स्थापना</li>
+<li>स्तम्भन अनुष्ठान</li>
+<li>न्यायालय विजय</li>
+<li>वाक्-सिद्धि</li>
 </ul>
+<a href="https://wa.me/91XXXXXXXXXX">WhatsApp Booking</a>
 </div>
-
-<button>पितृ मोक्ष भागवत कथा</button>
-<div>
-<ul>
-<li>श्रीमद्भागवत कथा</li>
-<li>हवन व दान</li>
-<li>ब्राह्मण भोज</li>
-</ul>
-</div>
-
-<button>महाकाल विशेष अनुष्ठान</button>
-<div>
-<ul>
-<li>रुद्राभिषेक</li>
-<li>महामृत्युंजय जाप</li>
-<li>भस्म आरती दर्शन</li>
-</ul>
-</div>
-
-<button>संस्कार एवं विशेष पूजा</button>
-<div>
-<ul>
-<li>विवाह संस्कार</li>
-<li>नामकरण / मुंडन</li>
-<li>गृह प्रवेश</li>
-<li>वास्तु शांति</li>
-</ul>
-</div>
-
-<button>ज्योतिष सेवाएँ</button>
-<div>
-<ul>
-<li>जन्म कुंडली</li>
-<li>गुण मिलान</li>
-<li>करियर / विवाह योग</li>
-<li>रत्न परामर्श</li>
-</ul>
-</div>
-
-</div>
-</section>
-
-<!-- RASHIFAL -->
-<section id="rashifal">
-<h2>Rashifal</h2>
-<p>Daily | Weekly | Monthly | Yearly – सभी 12 राशियाँ</p>
-</section>
-
-<!-- KUNDLI -->
-<section id="kundli">
-<h2>Kundli</h2>
-<ul>
-<li>Janam Kundli</li>
-<li>Guna Milan</li>
-<li>Manglik / Kal Sarp</li>
-<li>Muhurat</li>
-</ul>
-</section>
-
-<!-- PANCHANG -->
-<section id="panchang">
-<h2>Panchang</h2>
-<p>100 वर्षों का पंचांग – तिथि, नक्षत्र, योग, करण</p>
 </section>
 
 <!-- SHOP -->
 <section id="shop">
-<h2>Shop</h2>
-<ul>
-<li>रत्न – नीलम, पुखराज, मोती, माणिक</li>
-<li>रुद्राक्ष</li>
-<li>पूजा सामग्री</li>
-</ul>
-<img src="images/shop/ratna.jpg">
-</section>
+<h2>🛍️ Shop</h2>
 
-<!-- UJJAIN -->
-<section id="ujjain">
-<h2>Ujjain Darshan</h2>
+<div class="shop-grid">
+<div class="shop-item">
+<img src="images/rudraksha.jpg">
+<h3>Rudraksha</h3>
+<p>₹500 – ₹25000</p>
+<a href="https://wa.me/91XXXXXXXXXX">Buy on WhatsApp</a>
+</div>
 
-<h3>Mahakaleshwar Jyotirlinga</h3>
-<img src="images/ujjain/mahakal.jpg">
+<div class="shop-item">
+<img src="images/gemstone.jpg">
+<h3>Gemstones</h3>
+<p>₹1500 – ₹50000</p>
+<a href="https://wa.me/91XXXXXXXXXX">Buy on WhatsApp</a>
+</div>
 
-<h3>Kaal Bhairav Mandir</h3>
-<img src="images/ujjain/kaalbhairav.jpg">
-
-<h3>Ram Ghat</h3>
-<img src="images/ujjain/ramghat.jpg">
+<div class="shop-item">
+<img src="images/yantra.jpg">
+<h3>Yantra</h3>
+<p>₹1100 – ₹21000</p>
+<a href="https://wa.me/91XXXXXXXXXX">Buy on WhatsApp</a>
+</div>
+</div>
 </section>
 
 <!-- AARTI -->
 <section id="aarti">
-<h2>Aarti & Mantra Sangrah</h2>
+<h2>🕯️ Aarti & Mantra</h2>
 <ul>
 <li>महाकाल आरती</li>
-<li>गणेश आरती</li>
-<li>हनुमान चालीसा</li>
+<li>शिव आरती</li>
 <li>महामृत्युंजय मंत्र</li>
+<li>हनुमान चालीसा</li>
+<li>दुर्गा आरती</li>
 </ul>
 </section>
 
 <!-- REPORTS -->
 <section id="reports">
-<h2>Reports</h2>
-<ul>
-<li>Daily / Weekly / Monthly / Yearly</li>
-<li>Agriculture</li>
-<li>Weather</li>
-<li>Education</li>
-<li>Business / Finance</li>
-<li>Marriage / Love</li>
-</ul>
-</section>
-
-<!-- BOOKING -->
-<section id="booking">
-<h2>Online Booking / Enquiry</h2>
-
-<form onsubmit="sendWhatsApp();return false;">
-<label>नाम</label>
-<input id="name" required>
-
-<label>मोबाइल</label>
-<input id="mobile" required>
-
-<label>सेवा</label>
-<select id="service">
-<option>काल भैरव पूजा</option>
-<option>पितृ मोक्ष</option>
-<option>महाकाल रुद्राभिषेक</option>
-<option>कुंडली परामर्श</option>
-</select>
-
-<label>संदेश</label>
-<textarea id="message"></textarea>
-
-<button type="submit">WhatsApp पर भेजें</button>
-</form>
+<h2>📊 Reports</h2>
+<p>Daily • Weekly • Monthly • Yearly</p>
+<p>Agriculture • Weather • Education • Business • Finance • Marriage • Love</p>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-<h2>About Us</h2>
-<p>
-Pandit Abhishek Sharma (Upadhyay) – वैदिक ज्योतिष एवं कर्मकांड में वर्षों का अनुभव।
-उज्जैन में सभी प्रकार की धार्मिक सेवाएँ।
-</p>
+<h2>👤 About Us</h2>
+<p>उज्जैन की वैदिक परंपरा से जुड़ी प्रामाणिक ज्योतिष एवं कर्मकांड सेवाएँ।</p>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-<h2>Contact</h2>
-<p>📞 Mobile: 9XXXXXXXXX</p>
-<p>📧 Email: panditji@email.com</p>
-<p>📍 Ujjain, Madhya Pradesh</p>
+<h2>📞 Contact</h2>
+<p><a href="https://wa.me/91XXXXXXXXXX">WhatsApp Chat</a></p>
+<p>Email: example@email.com</p>
 </section>
 
 <!-- TERMS -->
 <section id="terms">
-<h2>Terms & Conditions</h2>
-<p>पूजा एवं ज्योतिषीय सेवाएँ वैदिक परंपरा अनुसार की जाती हैं।</p>
-</section>
-
-<!-- LEGAL -->
-<section id="legal">
-<h2>Legality</h2>
-<p>यह वेबसाइट धार्मिक एवं जानकारी हेतु है।</p>
+<h2>📜 Terms & Legality</h2>
+<p>Astrology is subject to belief. Spiritual guidance only.</p>
 </section>
 
 </div>
-
-<a class="whatsapp"
-href="https://wa.me/91XXXXXXXXXX"
-target="_blank">💬</a>
-
-<script>
-let lang="hi";
-function toggleLang(){
-lang = lang==="hi" ? "en" : "hi";
-document.querySelectorAll("[data-hi]").forEach(el=>{
-el.innerText = el.getAttribute("data-"+lang);
-});
-}
-
-document.querySelectorAll(".accordion button").forEach(btn=>{
-btn.onclick = ()=>btn.nextElementSibling.classList.toggle("open");
-});
-
-function sendWhatsApp(){
-let n=name.value,m=mobile.value,s=service.value,msg=message.value;
-let url="https://wa.me/91XXXXXXXXXX?text="
-+"नाम: "+n+"%0Aमोबाइल: "+m+"%0Aसेवा: "+s+"%0Aसंदेश: "+msg;
-window.open(url,"_blank");
-}
-</script>
-
 </body>
 </html>
